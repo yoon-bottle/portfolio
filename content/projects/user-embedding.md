@@ -49,4 +49,4 @@ LTV·Churn 공동 예측을 두 게임에 적용했고, 연구 결과는 WWW 202
 
 ### 관련 논문
 [TransForeCaster: In-and-Cross Categorized Feature Integration in User Representation Learning](https://doi.org/10.1145/3701716.3715267)  
-The Web Conference (WWW), Industry Track, 2025 · 공동 2저자
+The Web Conference (WWW) 2025 · Industry Track · 공동 2저자
