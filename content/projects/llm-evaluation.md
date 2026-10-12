@@ -5,7 +5,7 @@ category: "Model evaluation"
 period: "2026.07–2026.09"
 role: "벤치마크 · 학습 · 리더보드 개발"
 status: "사내 평가 및 결과 공유"
-tags: ["LoRA", "SFT"]
+tags: ["LLM Evaluation", "LoRA", "SFT"]
 order: 4
 ---
 

@@ -5,7 +5,7 @@ category: "Predictive modeling"
 period: "2024.06–2026.01"
 role: "모델링 · 데이터 파이프라인 · 실험"
 status: "모델·파이프라인 구축 / 논문 게재"
-tags: ["TensorFlow", "Multi-task Learning", "Feature Store", "Ordinal Classification"]
+tags: ["TensorFlow", "Databricks", "Tableau", "Multi-task Learning", "Feature Store", "Ordinal Classification"]
 order: 1
 ---
 
