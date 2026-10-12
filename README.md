@@ -1,6 +1,6 @@
-# 이윤병 · Data Scientist Portfolio
+# Portfolio
 
-`https://yoon-bottle.github.io/portfolio/` 배포를 위한 정적 포트폴리오입니다.
+GitHub Pages로 배포하는 정적 포트폴리오입니다.
 프로젝트별 문제 정의, 수행 내용, 결과를 정리합니다.
 
 ## 로컬에서 보기
