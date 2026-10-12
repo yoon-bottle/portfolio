@@ -5,7 +5,7 @@ category: "Model serving"
 period: "2025.07–2026.01"
 role: "예측 모델 · 온라인 피처 · 실시간 API"
 status: "개발 완료 / A/B 테스트 준비"
-tags: ["MMoE", "Databricks", "Online Feature Store"]
+tags: ["MMoE", "Databricks", "Online Feature Store", "Model Serving"]
 order: 3
 ---
 

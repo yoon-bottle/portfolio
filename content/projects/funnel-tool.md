@@ -5,7 +5,7 @@ category: "Analytics product"
 period: "2025.12–2026.08"
 role: "웹앱 · 자연어 설정 · MCP 개발"
 status: "2개 팀에서 지속 사용"
-tags: ["Funnel Analysis", "MCP"]
+tags: ["MCP"]
 order: 2
 ---
 

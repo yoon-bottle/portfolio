@@ -5,7 +5,7 @@ category: "Internal product"
 period: "2026.05–2026.06"
 role: "웹앱 전체 개발"
 status: "개발 완료 / 실사용 전"
-tags: ["Dashboard", "Revenue sharing", "Web app"]
+tags: []
 order: 8
 ---
 

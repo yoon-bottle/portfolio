@@ -5,7 +5,7 @@ category: "Workflow automation"
 period: "2026.03–2026.05"
 role: "웹 개발 · 집계 로직 설계·검증"
 status: "재무팀 정산 업무에 사용"
-tags: ["API integration", "Data validation", "Web app"]
+tags: ["API Integration", "Data Validation"]
 order: 6
 ---
 
