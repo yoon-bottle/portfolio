@@ -6,6 +6,7 @@ role: "4인 팀 · 개발 주도 · 에이전트 오케스트레이션"
 status: "장려상 · 4위"
 tags: ["Multi-agent", "LangGraph", "Tool Calling"]
 order: 9
+showInProjects: false
 summary: "관광·기상·해양 정보를 함께 고려해 답변하는 구룡포 지역 정보 챗봇."
 ---
 
