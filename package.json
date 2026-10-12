@@ -1,0 +1,14 @@
+{
+  "name": "yoon-bottle-portfolio",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "preview": "npm run build && python3 -m http.server 4321 --directory docs --bind 127.0.0.1",
+    "check": "node scripts/check.mjs"
+  },
+  "dependencies": {
+    "marked": "17.0.1",
+    "yaml": "^2.9.1"
+  }
+}
