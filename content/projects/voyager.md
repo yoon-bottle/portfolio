@@ -5,7 +5,7 @@ category: "Data pipelines"
 period: "2024.12–2025.06"
 role: "예측 파이프라인 확장 · 유지보수"
 status: "기존 파이프라인 개선"
-tags: ["SKAN"]
+tags: ["Airflow", "SKAN"]
 order: 7
 ---
 
