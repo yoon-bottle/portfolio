@@ -1,6 +1,6 @@
 # 이윤병 · Data Scientist Portfolio
 
-`https://yoon-bottle.github.io` 배포를 위한 정적 포트폴리오입니다.
+`https://yoon-bottle.github.io/portfolio/` 배포를 위한 정적 포트폴리오입니다.
 프로젝트별 문제 정의, 수행 내용, 결과를 정리합니다.
 
 ## 로컬에서 보기
@@ -49,7 +49,7 @@ npm run check
 
 ## GitHub Pages
 
-저장소 이름: `yoon-bottle.github.io`
+저장소 이름: `portfolio`
 배포 소스: `main` 브랜치의 `/docs` 폴더. `.nojekyll` 파일이 함께 생성됩니다.
 내용 변경 후 빌드와 확인을 마치고 `docs/`도 함께 커밋·푸시하면 Pages가 갱신됩니다.
 Markdown 원문과 Git 이력도 공개되므로 비공개 참고 자료와 원본 데이터는 저장소 밖에서 관리합니다.

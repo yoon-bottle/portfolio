@@ -3,6 +3,7 @@ import path from 'node:path';
 import {fileURLToPath} from 'node:url';
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'../docs');
 async function walk(dir){const result=[];for(const entry of await readdir(dir,{withFileTypes:true})){const p=path.join(dir,entry.name);if(entry.isDirectory())result.push(...await walk(p));else if(p.endsWith('.html'))result.push(p);}return result;}
+const base=process.env.SITE_BASE ?? '/portfolio';
 const pages=await walk(root);const errors=[];
 for(const file of pages){const html=await readFile(file,'utf8');
  if((html.match(/<h1[ >]/g)||[]).length!==1)errors.push(`${file}: expected one H1`);
@@ -12,7 +13,9 @@ for(const file of pages){const html=await readFile(file,'utf8');
  for(const m of html.matchAll(/(?:href|src)="([^"]+)"/g)){
   const ref=m[1];if(/^(https?:|mailto:|data:)/.test(ref))continue;
   const [url,hash]=ref.split('#');
-  let target=url?path.resolve(root,'.'+url):file;
+  if(url && base && !url.startsWith(base+'/'))errors.push(`${file}: missing site base ${ref}`);
+  const localUrl=base && url.startsWith(base+'/')?url.slice(base.length):url;
+  let target=localUrl?path.resolve(root,'.'+localUrl):file;
   try { if((await stat(target)).isDirectory())target=path.join(target,'index.html');
    const targetText=await readFile(target,'utf8');if(hash&&!targetText.includes(`id="${hash}"`))errors.push(`${file}: missing anchor ${ref}`);
   }catch{errors.push(`${file}: broken link ${ref}`);}
