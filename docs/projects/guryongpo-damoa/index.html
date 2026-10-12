@@ -1,0 +1,23 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Guryongpo DAMOA · 이윤병</title><meta name="description" content="관광·기상·해양 정보를 함께 고려해 답변하는 구룡포 지역 정보 챗봇."><meta name="theme-color" content="#ffffff"><link rel="canonical" href="https://yoon-bottle.github.io/portfolio/projects/guryongpo-damoa/"><link rel="icon" href="/portfolio/assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/portfolio/assets/style.css"></head><body><a class="skip" href="#main">본문으로 이동</a><header class="site-header"><a class="identity" href="/portfolio/">이윤병 <span class="english-name">Yoonbyung Lee</span><span class="job-title">Data Scientist</span></a><div class="header-contact"><nav aria-label="연락처"><a class="social" href="https://github.com/yoon-bottle" aria-label="GitHub 프로필">GH</a><a class="social" href="https://www.linkedin.com/in/yoonbyung-lee-8784a1340" aria-label="LinkedIn 프로필">in</a><a class="social" href="mailto:lyb030414@gmail.com" aria-label="이메일 보내기">@</a></nav><a href="mailto:lyb030414@gmail.com">lyb030414@gmail.com</a><a href="https://github.com/yoon-bottle">github.com/yoon-bottle</a></div></header><main id="main" class="case"><a class="back" href="/portfolio/#projects">← 모든 프로젝트</a><header class="case-header"><p class="eyebrow">Hackathon · AI Agent</p><h1>Guryongpo DAMOA</h1><p class="case-summary">관광·기상·해양 정보를 함께 고려해 답변하는 구룡포 지역 정보 챗봇.</p><dl class="case-meta"><div><dt>기간</dt><dd>2025.08–2025.09</dd></div><div><dt>내 역할</dt><dd>4인 팀 · 개발 주도 · 에이전트 오케스트레이션</dd></div><div><dt>진행 상태</dt><dd>장려상 · 4위</dd></div></dl><div class="tags"><span>Multi-agent</span><span>LangGraph</span><span>Tool Calling</span></div></header><div class="case-layout"><aside><nav aria-label="목차"><span class="eyebrow">이 프로젝트에서</span><a href="#section-0">정의</a><a href="#section-1">내용</a><a href="#section-2">결과</a></nav></aside><article><h2 id="section-0">정의</h2><p>관광객·지역 주민·어민이 여러 서비스의 정보를 따로 찾아보는 수고를 줄이기 위한 지역 정보 챗봇입니다. 디지털 트윈과 외부 API의 정보를 연결해 이동 계획, 날씨, 해양 상황에 관한 질문에 답하도록 개발했습니다.</p>
+<p>관광지 추천만으로는 날씨나 해양 상황을 함께 고려하기 어렵습니다. 관광·기상·해양 에이전트가 각각의 관점에서 답변을 생성하고 검토하는 구조를 적용했습니다.</p>
+<h2 id="section-1">내용</h2><h3>담당 범위</h3><p>4인 팀에서 개발을 주도하고, LangGraph 기반 에이전트 오케스트레이션을 담당했습니다. 질문별 역할 배정, 답변 생성·검증, 피드백 반영과 반복 종료, 최종 요약을 하나의 워크플로우로 연결했습니다. 지도 연동과 음성 입출력 등 사용자 기능도 구현했습니다.</p>
+<h3>답변 생성과 검증</h3><ol>
+<li><strong>역할 배정:</strong> 질문과 관련성이 높은 에이전트를 답변 생성자로, 나머지 두 에이전트를 검토자로 지정</li>
+<li><strong>초안 생성:</strong> 담당 에이전트가 도구를 호출해 필요한 정보를 조회하고 답변 작성</li>
+<li><strong>병렬 검토:</strong> 다른 두 에이전트가 각 분야의 정보 누락과 보완 사항 검토</li>
+<li><strong>피드백 반영:</strong> 검토 결과를 모아 답변 수정, 검토 통과 또는 반복 횟수 상한에 따른 종료</li>
+<li><strong>최종 응답:</strong> 답변 요약과 표현 정리, 관련 장소 추출 및 지도 표시</li>
+</ol>
+<p>예를 들어 관광 에이전트가 이동 계획을 제안하면, 기상·해양 에이전트가 날씨와 해안 상황을 검토합니다. 분야별 API 조회 결과를 답변 수정에 반영하도록 구성했습니다.</p>
+<h3>서비스 화면</h3><p>관광 장소·경로, 기상 예보·특보, 디지털 트윈 데이터를 챗봇에 연결했습니다. 답변에 등장한 장소는 지도에 표시하고, 음성 입력·읽어주기 기능을 추가했습니다.</p>
+<figure class="project-screenshot" style="max-width:360px;margin-left:auto;margin-right:auto">
+<a href="/portfolio/assets/screenshots/damoa-chat-map.png" target="_blank" rel="noopener"><img src="/portfolio/assets/screenshots/damoa-chat-map.png" alt="구룡포 다모아 챗봇의 답변과 관련 장소 지도 표시 화면" loading="lazy"></a>
+<figcaption>지역 정보 답변과 관련 장소의 지도 표시. 해커톤 발표 데모 발췌.</figcaption>
+</figure>
+
+<h2 id="section-2">결과</h2><p>**2025 디지털 트윈 구룡포 AI 해커톤 장려상(4위)**을 수상했습니다. 관광·기상·해양 정보 조회부터 답변 검토, 지도 표시까지 연결한 챗봇을 구현하고 발표 데모로 시연했습니다.</p>
+<ul>
+<li>주최: 과학기술정보통신부, 한국지능정보사회진흥원, 경상북도, 포항시</li>
+<li>주관: POSTECH POIC 미래도시연구센터</li>
+</ul>
+</article></div><a class="next-project" href="/portfolio/projects/user-embedding/"><span>다음 프로젝트</span><strong>User Embedding ↗</strong></a></main><footer><span>이윤병 · Yoonbyung Lee</span><div><a href="https://github.com/yoon-bottle">GitHub ↗</a><a href="https://www.linkedin.com/in/yoonbyung-lee-8784a1340">LinkedIn ↗</a><a href="mailto:lyb030414@gmail.com">Email ↗</a></div></footer></body></html>
